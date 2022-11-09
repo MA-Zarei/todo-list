@@ -1,0 +1,10 @@
+.Container {
+  background-image: linear-gradient(to left bottom, #000000, #0e080b, #161015, #1b161d, #1e1b26, #1e1d2a, #1d1f2f, #1b2233, #182133, #152033, #111f33, #0d1e33);
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

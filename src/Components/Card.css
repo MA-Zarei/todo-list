@@ -1,0 +1,125 @@
+.BigCard{
+    width: 20rem;
+    height: 30rem;
+    text-align: center;;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #002f61;
+    -webkit-box-shadow: 30px 30px 35px #001327, -30px -30px 35px #004b9b;
+    box-shadow: 30px 30px 35px #001327, -5px -5px 100px #02356b;
+    padding: 2rem;
+}
+
+.tasks{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    height: 2rem;
+    background-color: rgba(87, 238, 193, 0.44);
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn { 
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+.icon{
+    height: 1.5rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin-left: 0rem;
+    margin-left: 0.1rem;
+}
+
+.icon:hover{
+  filter: drop-shadow(0px 0px 0.05rem white);
+  transform: scale(1.2);
+}
+
+@keyframes gradient { 
+  0%{background-position:0 0}
+  100%{background-position:100% 0}
+}
+
+.webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 -0.4rem;
+    border-radius: 10px 10px 0% 0%;
+    padding: 0.6rem 0.4rem 0.7rem;
+    background: rgba(255, 173, 9, 0.7);
+}
+.webflow-style-input:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 999;
+      height: 2px;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      background-position: 0% 0%;
+      background: linear-gradient(to right, #B294FF, #57E6E6, #1c23aa, #57E6E6, #B294FF, #57E6E6);
+      background-size: 500% auto;
+      animation: gradient 5s linear infinite;
+    }
+  
+  .webflow-style-input input {
+    width: 2rem;
+    height: 1.8rem;
+    flex-grow: 1;
+    color: #00050f;
+    background-color: rgba(254, 255, 255, 0.542);
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    border-style: none;
+  }
+  .webflow-style-input input::-webkit-input-placeholder {
+      color: #7881A1;
+    }
+  
+  .webflow-style-input button {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    font-size: 2.8rem;
+    line-height: 1.8rem;
+    vertical-align: middle;
+    transition: color .25s;
+    cursor: pointer;
+  }
+  
+  .webflow-style-input button img , .reseticon{
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: transform 0.5s;
+  }
+
+  .webflow-style-input button img:hover , .reseticon:hover{
+      /* color: #637296; */
+      filter:drop-shadow(0px 0px 0.4rem rgb(63, 254, 0));
+      transform: scale(1.2);
+    }
+  
+  .done{
+    text-decoration:double;
+    text-decoration-line:line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.462);
+  }
